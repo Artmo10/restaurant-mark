@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mark's Burgers</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <!-- Navigation bar -->
     <nav class="nav">
-        <span class="nav_logo"></span>
+        <span class="nav_logo">Mark's Burger</span>
         <div>
             <a href="#home" class="nav_link">Home</a>
             <a href="#about" class="nav_link">About </a>
@@ -18,13 +19,13 @@
             </a>
         </div>
     </nav>
-    <!-- Header Element -->
+    <!-- Header Content -->
     <header id="home">
         <h1 class="home_title">Mark's Burgers</h1>
         <p class="home_paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt delectus alias exercitationem, nisi commodi pariatur culpa. Fuga culpa doloribus quas.</p>
         <button class="home_button">Contact Us</button>
     </header>
-    <!-- Main Element-->
+    <!-- Main Content-->
     <main>
         <section id="about">
             <img src="./assets/about-image.png" alt="" class="about_image">
@@ -36,8 +37,34 @@
         </section>
 
         <section id="menu">
+            <div class="menu_wrapper">
+                <h2 class="menu_title">Menu</h2>
+                <p class="menu_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quam quia nulla, corrupti blanditiis assumenda deleniti earum non, facere itaque odio exercitationem eaque consequuntur. Rerum vero obcaecati autem adipisci cupiditate?</p>
+                <button class="menu_button">Learn More</button>
+            </div>
+            <img src="./assets/menu-image.png" alt="" class="menu_image">
+        </section>
 
+        <section id="contact">
+            <h2 class="contact_title">Contact</h2>
+            <form action="" class="contact_form">
+                <label for="name">Name</label>
+                <input type="text" id="name" class="contact_form_input">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="contact_form_input">
+                <label for="message">Message</label>
+                <textarea id="message" cols="30" rows="10" class="contact_form_textarea"></textarea>
+                <button class="contact_form_button">Send</button>
+            </form>
         </section>
     </main>
+
+    <!-- Footer Content-->
+    <footer class="footer">
+        <a href="#home" class="footer_link">Home</a>
+        <a href="#about" class="footer_link">About</a>
+        <a href="#menu" class="footer_link">Menu</a>
+        <a href="#contact" class="footer_link">Contact</a>
+    </footer>
 </body>
 </html>
